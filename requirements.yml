@@ -6,8 +6,15 @@
 - src: unxnn.users
   version: '56f9436e0d1e92a743e9f960d0b978ac8b72e070'
 
-- src: geerlingguy.docker
-  version: "2.5.2"
+# FIXME: geerlingguy.docker role has hard-coded URLs which doesn't work when
+# running offline. Specifying a forked version temporarily while we work to
+# resolve.
+#
+#- src: geerlingguy.docker
+#  version: "2.5.2"
+- src: https://github.com/ajdecon/ansible-role-docker
+  version: 'c73e2f6d8fe1d3063c7bb6f9388ecdccc73c00c5'
+  name: ajdecon.docker
 
 - src: https://github.com/lukeyeager/ansible-role-hosts.git
   version: '711ba98571f068a8bc6739fa1055ac38fc931010'
