@@ -9,7 +9,7 @@
 
 - name: add repo
   get_url:
-    url: "{{ nvdocker_repo_base_url }}/{{ rhel_repo_dist_name }}/{{ rhel_repo_file_name }}"
+    url: "{{ nvdocker_rhel_repo_file_download_url }}"
     dest: "{{ rhel_repo_file_path }}"
     mode: 0644
     owner: root
