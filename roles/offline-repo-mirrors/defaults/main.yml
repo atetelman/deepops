@@ -3,6 +3,7 @@ offline_cache_dir: "/tmp/deepops"
 build_tar_file: true
 tar_file_path: "/tmp/deepops-archive.tar"
 extract_path: "/tmp/deepops-extracted"
+tar_file_copy: "no"
 
 # Destination for files on repo mirror machine
 deepops_dest_path: "/opt/deepops"
@@ -95,7 +96,7 @@ nvidia_k8s_device_plugin_url: "https://raw.githubusercontent.com/NVIDIA/k8s-devi
 nvidia_docker_wrapper_url: "https://raw.githubusercontent.com/NVIDIA/nvidia-docker/master/nvidia-docker"
 
 # Configure download of docker images
-docker_http_timeout: 120
+docker_http_timeout: 180
 docker_image_list:
 - name: "ceph"
   repo: ""
